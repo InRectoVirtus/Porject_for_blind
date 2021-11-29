@@ -43,7 +43,7 @@
 }
 
 .section-one__block-title__button {
-  margin-right: 185px;
+  margin-right: 170px;
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -51,13 +51,12 @@
   color: black;
   border: solid white;
   border-radius: 50px;
-  border-width: 22px 35px 22px 52px;
+  border-width: 22px 35px 22px 75px;
 }
 
 .section-one__block-title__button::before {
-  content: "";
+  content: url("../img/play_market.png");
   position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: red;
+  -webkit-transform: translateX(-45px) translateY(-4px);
+          transform: translateX(-45px) translateY(-4px);
 }
