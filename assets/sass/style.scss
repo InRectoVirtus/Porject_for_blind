@@ -6,6 +6,9 @@
     padding: 55px 20px;
 
     &-block{
+        max-width: 1240px;
+        margin: auto;
+
         display: flex;
         align-items: center;
     }
@@ -18,7 +21,7 @@
             font-weight: 500;
             font-size: 18px;
             
-            padding: 0 65px;
+            padding-left: 64px;
             
             a:link,
             a:visited,
@@ -29,15 +32,10 @@
         }
     }
 
-    &__burger-button {
+    &__burger {
         display: none;
         
     }
-}
-
-.container {
-    max-width: 1240px;
-    margin: auto;
 }
 
 /* ------------------------ #Header ------------------------ */

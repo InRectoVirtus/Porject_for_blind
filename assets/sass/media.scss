@@ -1,24 +1,14 @@
-@media (max-width: 1024px) {
-    .head {
-        &-block__list{
-            li{
-                font-size: 16px;
-
-                padding: 0 49px;
-            }
-        }
-    }
-}
-
 @media (max-width: 786px) {
 
     .head {
         height: 114px;
         padding: 31px 16px 31px 16px;
 
-        &-img {
-            height: 52px;
-            width: 80px;
+        &-block__logo {
+            img{
+                height: 52px;
+                width: 80px;
+            }
         }
 
         &-block__list{
@@ -36,44 +26,40 @@
     .head{
         &-block{
             justify-content: space-between;
-        }
-    
-        &-block__list{
-            display: none;
-        }
-    
-        &__burger-button {
-            display: block;
-            width: 37px;
-            height: 52px;
-            position: relative;
-    
-            span,
-            span:before,
-            span:after {
-                position: absolute;
-                top: 48%;
+
+            &__list{
+                display: none;
+            }
+
+            &__burger {
+                display: block;
                 width: 37px;
-                height: 2px;
-                background-color: white;
-            }
-    
-            span:before,
-            span:after {
-                content: '';
-            }
-    
-            span:before {
-                transform: translateY(-11px);
-            }
-    
-            span:after {
-                transform: translateY(11px);
+                height: 52px;
+                position: relative;
+        
+                span,
+                span:before,
+                span:after {
+                    position: absolute;
+                    top: 48%;
+                    width: 37px;
+                    height: 2px;
+                    background-color: white;
+                }
+        
+                span:before,
+                span:after {
+                    content: '';
+                }
+        
+                span:before {
+                    transform: translateY(-11px);
+                }
+        
+                span:after {
+                    transform: translateY(11px);
+                }
             }
         }
     }
-}
-
-@media (max-width: 425px) {
-
 }
