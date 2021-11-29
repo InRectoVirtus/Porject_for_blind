@@ -1,0 +1,56 @@
+@import "zeroStyle.scss";
+
+
+
+/* ------------------------ #Header ------------------------ */
+
+
+.head {
+    background-color: black;
+    height: 180px;
+    padding: 55px 0;
+
+    &__block{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__block__list{
+        display: flex;
+        flex-direction: row;
+        li {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            
+            padding: 0 65px;
+            
+            a:link,
+            a:visited,
+            a:hover,
+            a:active {
+                color: white;
+            }
+        }
+    }
+
+    &__burger_button {
+        display: none;
+        
+    }
+}
+
+
+
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+
+/* ------------------------ #Header ------------------------ */
+
+/* ------------------------ #Media ------------------------ */
+
+@import "media.scss";
+
+/* ------------------------ #Media ------------------------ */
