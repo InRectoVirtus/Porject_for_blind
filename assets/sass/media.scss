@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
     .head {
-        &__block__list{
+        &-block__list{
             li{
                 font-size: 16px;
 
@@ -16,12 +16,12 @@
         height: 114px;
         padding: 31px 16px 31px 16px;
 
-        &__img {
+        &-img {
             height: 52px;
             width: 80px;
         }
 
-        &__block__list{
+        &-block__list{
             li{
                 font-size: 14px;
 
@@ -34,15 +34,15 @@
 @media (max-width: 650px) {
 
     .head{
-        &__block{
+        &-block{
             justify-content: space-between;
         }
     
-        &__block__list{
+        &-block__list{
             display: none;
         }
     
-        &__burger_button {
+        &__burger-button {
             display: block;
             width: 37px;
             height: 52px;
