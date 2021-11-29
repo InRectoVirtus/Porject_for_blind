@@ -121,6 +121,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------------------ #Header ------------------------ */
 /* ------------------------ #Media ------------------------ */
+@media (max-width: 1024px) {
+  .head__block__list li {
+    font-size: 16px;
+    padding: 0 49px;
+  }
+}
+
 @media (max-width: 786px) {
   .head {
     height: 114px;
@@ -136,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   .head__block {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
