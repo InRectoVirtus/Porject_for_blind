@@ -2,7 +2,7 @@
 
     .head {
         height: 114px;
-        padding: 31px 16px 31px 16px;
+        padding: 31px 16px;
 
         &-block__logo {
             img{
@@ -15,7 +15,7 @@
             li{
                 font-size: 14px;
 
-                padding: 0 35px;
+                padding-left: 64px;
             }
         }
     }
