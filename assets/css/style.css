@@ -1,1 +1,65 @@
-/* No CSS */
+body {
+  background-color: black;
+}
+
+.info {
+  max-width: 1240px;
+  margin: auto;
+  padding: 5px 20px;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__title {
+  max-width: 532px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info__title h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+}
+
+.info__title p {
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+}
+
+.info__button {
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border: solid white;
+  border-radius: 50px;
+  border-width: 22px 35px 22px 75px;
+}
+
+.info__button::before {
+  content: url("../img/play_market.png");
+  position: absolute;
+  -webkit-transform: translateX(-45px) translateY(-4px);
+          transform: translateX(-45px) translateY(-4px);
+}
