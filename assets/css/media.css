@@ -1,8 +1,9 @@
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .hero {
     padding: 5px 16px;
   }
   .hero__title {
+    max-width: 484px;
     margin-right: 10px;
   }
   .hero__title h2 {
