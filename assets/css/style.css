@@ -112,7 +112,7 @@ body {
     margin-bottom: 50px;
   }
   .hero__button {
-    margin-right: 0;
+    margin-bottom: 40px;
   }
   .hero__image {
     width: 100%;
@@ -122,8 +122,8 @@ body {
   .hero__image img {
     width: 140%;
     position: relative;
-    -webkit-transform: translate(-21%, 40px);
-            transform: translate(-21%, 40px);
+    -webkit-transform: translate(-21%, 0px);
+            transform: translate(-21%, 0px);
   }
 }
 
@@ -143,8 +143,8 @@ body {
   .hero__image img {
     width: 140%;
     position: relative;
-    -webkit-transform: translate(-21%, 10px);
-            transform: translate(-21%, 10px);
+    -webkit-transform: translate(-21%, 0px);
+            transform: translate(-21%, 0px);
   }
 }
 

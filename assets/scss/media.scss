@@ -60,7 +60,7 @@
         }
 
         &__button {
-            margin-right: 0;
+            margin-bottom: 40px;
         }
     &__image {
             width: 100%;
@@ -71,7 +71,7 @@
                 width: 140%;
                 position: relative;
                 
-                transform: translate(-21%, 40px);
+                transform: translate(-21%, 0px);
             }
         }
     }
@@ -96,7 +96,7 @@
                 width: 140%;
 
                 position: relative;
-                transform: translate(-21%, 10px);
+                transform: translate(-21%, 0px);
             }
         }
     }
