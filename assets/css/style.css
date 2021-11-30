@@ -1,13 +1,13 @@
-.container {
-  max-width: 1240px;
-  margin: auto;
-}
-
-.section-one {
+body {
   background-color: black;
 }
 
-.section-one__block {
+/* ------------------------ #Hero ------------------------ */
+.hero {
+  max-width: 1240px;
+  margin: auto;
+  padding: 5px 20px;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +19,7 @@
           justify-content: space-between;
 }
 
-.section-one__block-title {
+.hero__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,13 +28,13 @@
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-right: 25px;
   padding-bottom: 20%;
 }
 
-.section-one__block-title h2 {
+.hero__title h2 {
   color: white;
   font-size: 86px;
   font-weight: 500;
@@ -42,7 +42,7 @@
   margin-bottom: 60px;
 }
 
-.section-one__block-title__button {
+.hero__button {
   margin-right: 170px;
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
@@ -54,9 +54,96 @@
   border-width: 22px 35px 22px 75px;
 }
 
-.section-one__block-title__button::before {
+.hero__button::before {
   content: url("../img/play_market.png");
   position: absolute;
   -webkit-transform: translateX(-45px) translateY(-4px);
           transform: translateX(-45px) translateY(-4px);
 }
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__image img {
+  width: 100%;
+  min-width: 50%;
+}
+
+/* ------------------------ #Hero ------------------------ */
+/* ------------------------ #Media ------------------------ */
+@media (max-width: 1000px) {
+  .hero {
+    padding: 5px 16px;
+  }
+  .hero__title {
+    margin-right: 10px;
+  }
+  .hero__title h2 {
+    font-size: 66px;
+  }
+  .hero__button {
+    margin-right: 90px;
+    font-size: 16px;
+    border-width: 17px 27px 17px 58px;
+  }
+  .hero__button::before {
+    -webkit-transform: translateX(-38px) translateY(-7px) scale(0.8);
+            transform: translateX(-38px) translateY(-7px) scale(0.8);
+  }
+}
+
+@media (max-width: 755px) {
+  .hero {
+    padding: 5px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__title {
+    margin-right: 0px;
+    padding: 0px 10px;
+  }
+  .hero__title h2 {
+    font-size: 66px;
+    margin-bottom: 50px;
+  }
+  .hero__button {
+    margin-right: 0;
+  }
+  .hero__image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .hero__image img {
+    width: 140%;
+    position: relative;
+    -webkit-transform: translate(-21%, 40px);
+            transform: translate(-21%, 40px);
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    max-width: 100%;
+    margin: auto;
+  }
+  .hero__title h2 {
+    font-size: 50px;
+  }
+  .hero__image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .hero__image img {
+    width: 140%;
+    position: relative;
+    -webkit-transform: translate(-21%, 10px);
+            transform: translate(-21%, 10px);
+  }
+}
+
+/* ------------------------ #Media ------------------------ */
