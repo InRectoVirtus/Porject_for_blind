@@ -4,7 +4,6 @@
   }
   .hero__title {
     max-width: 484px;
-    margin-right: 10px;
   }
   .hero__title h2 {
     font-size: 66px;
@@ -20,6 +19,15 @@
   }
 }
 
+@media (max-width: 1075px) {
+  .hero__title h2 {
+    font-size: 55px;
+  }
+  .hero__title .hero__button {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 755px) {
   .hero {
     padding: 5px 0px;
@@ -29,6 +37,8 @@
             flex-direction: column;
   }
   .hero__title {
+    max-width: none;
+    width: auto;
     margin-right: 0px;
     padding: 0px 10px;
   }
