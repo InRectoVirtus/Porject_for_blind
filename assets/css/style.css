@@ -6,7 +6,6 @@ body {
   max-width: 1240px;
   margin: auto;
   padding: 5px 16px;
-  background-color: #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,13 +17,20 @@ body {
           justify-content: space-between;
 }
 
+.info__image {
+  margin-right: 10%;
+  min-width: 45%;
+}
+
 .info__image img {
   width: 100%;
 }
 
 .info__title {
   max-width: 532px;
-  min-width: 332px;
+  min-width: 338px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +48,24 @@ body {
   font-size: 50px;
   font-weight: 500;
   font-family: 'Rubik', sans-serif;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.info__title h2::before {
+  content: url("../img/ballBig.svg");
+  position: absolute;
+  -webkit-transform: translateX(-60px) translateY(-20px);
+          transform: translateX(-60px) translateY(-20px);
+  z-index: -1;
+}
+
+.info__title h2::after {
+  content: url("../img/ballSmall.svg");
+  position: absolute;
+  -webkit-transform: translateX(-467px) translateY(-10px);
+          transform: translateX(-467px) translateY(-10px);
+  z-index: 0;
 }
 
 .info__title p {
@@ -49,6 +73,7 @@ body {
   font-size: 28px;
   font-weight: 400;
   font-family: 'Rubik', sans-serif;
+  margin-bottom: 30px;
 }
 
 .info__button {
@@ -67,4 +92,12 @@ body {
   position: absolute;
   -webkit-transform: translateX(-45px) translateY(-4px);
           transform: translateX(-45px) translateY(-4px);
+}
+
+/* @Media */
+@media (max-width: 917px) {
+  .info__title h2::after {
+    -webkit-transform: translateX(-160px) translateY(-60px);
+            transform: translateX(-160px) translateY(-60px);
+  }
 }

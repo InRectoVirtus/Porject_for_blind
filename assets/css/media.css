@@ -1,1 +1,6 @@
-/* No CSS */
+@media (max-width: 917px) {
+  .info__title h2::after {
+    -webkit-transform: translateX(-160px) translateY(-60px);
+            transform: translateX(-160px) translateY(-60px);
+  }
+}

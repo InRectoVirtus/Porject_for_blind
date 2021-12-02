@@ -1,0 +1,21 @@
+@media (max-width: 917px) {
+    .info {
+
+        &__image {
+
+        }
+
+        &__title {
+            h2 {
+                
+                &::after {
+                    transform: translateX(-160px) translateY(-60px);
+                }
+            }
+        }
+
+        &__button {
+
+        }
+    }
+}

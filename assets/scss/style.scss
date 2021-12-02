@@ -8,7 +8,6 @@ body {
     margin: auto;
     padding: 5px 16px;
 
-    background-color: #ccc;
 
     display: flex;
     align-items: center;
@@ -16,16 +15,20 @@ body {
 
     &__image {
  
+        margin-right: 10%;
 
+        min-width: 45%;
         img {
-            width: 100%
+
+            width: 100%;
         }
     }
 
     &__title {
         max-width: 532px;
-        min-width: 332px;
+        min-width: 338px;
 
+        flex-shrink: 1;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -36,6 +39,24 @@ body {
             font-size: 50px;
             font-weight: 500;
             font-family: 'Rubik', sans-serif;
+
+            margin-bottom: 70px;
+            z-index: 2;
+
+            &::before {
+                content: url('../img/ballBig.svg');
+                position: absolute;
+                transform: translateX(-60px) translateY(-20px);
+                z-index: -1;
+            }
+
+            &::after {
+                content: url('../img/ballSmall.svg');
+                position: absolute;
+                transform: translateX(-467px) translateY(-10px);
+                z-index: 0;
+            }
+
         }
 
         p {
@@ -44,6 +65,8 @@ body {
             font-size: 28px;
             font-weight: 400;
             font-family: 'Rubik', sans-serif;
+
+            margin-bottom: 30px;
         }
     }
     
@@ -68,3 +91,7 @@ body {
         }
     }
 }
+
+/* @Media */
+
+@import 'media.scss'
