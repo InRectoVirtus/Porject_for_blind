@@ -6,7 +6,7 @@ body {
 .hero {
   max-width: 1240px;
   margin: auto;
-  padding: 5px 20px;
+  padding: 5px 16px;
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,6 +61,14 @@ body {
           transform: translateX(-45px) translateY(-4px);
 }
 
+.hero__image {
+  width: 100%;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
 /* ------------------------ #Hero ------------------------ */
 /* ------------------------ #Media ------------------------ */
 @media (max-width: 1220px) {
@@ -105,7 +113,7 @@ body {
     max-width: none;
     width: auto;
     margin-right: 0px;
-    padding: 0px 10px;
+    padding: 0px 16px;
   }
   .hero__title h2 {
     font-size: 66px;
