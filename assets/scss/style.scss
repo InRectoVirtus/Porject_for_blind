@@ -1,0 +1,52 @@
+.scroll {
+
+    width: 1220px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__line {
+        &::before{
+            content: '';
+
+            background-color: black;
+            height: 100px;
+            width: 2px;
+            display: block;
+        }
+    }
+
+    &__title {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+        
+        padding-left: 60px;
+        margin-top: 56px;
+
+        z-index: 2;
+        &::before {
+            content: url('../img/vectorRoundH1.svg');
+            position: absolute;
+            z-index: -1;
+
+            transform: translateX(-51px) translateY(-19px);
+        }
+        
+        &::after {
+            content: url('../img/vectorRoundH2.svg');
+            position: absolute;
+            z-index: -1;
+
+            transform: translateX(-730px) translateY(-7px);
+        }
+    }
+
+    &__icon {
+
+    }
+
+}

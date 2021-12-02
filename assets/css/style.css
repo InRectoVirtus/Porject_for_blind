@@ -1,0 +1,47 @@
+.scroll {
+  width: 1220px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll__line::before {
+  content: '';
+  background-color: black;
+  height: 100px;
+  width: 2px;
+  display: block;
+}
+
+.scroll__title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  padding-left: 60px;
+  margin-top: 56px;
+  z-index: 2;
+}
+
+.scroll__title::before {
+  content: url("../img/vectorRoundH1.svg");
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translateX(-51px) translateY(-19px);
+          transform: translateX(-51px) translateY(-19px);
+}
+
+.scroll__title::after {
+  content: url("../img/vectorRoundH2.svg");
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translateX(-730px) translateY(-7px);
+          transform: translateX(-730px) translateY(-7px);
+}
