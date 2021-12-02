@@ -64,9 +64,15 @@
     }
 }
 
-@media (max-width: 500px) {
-    .info__title h2::before {
-                
+@media (max-width: 520px) {
+    .info__title  {
+        h2 {
+            max-width: 396px;
+        }
+
+        h2::before{
+
+        }
     }
     .info__title {
         h2::after{ 

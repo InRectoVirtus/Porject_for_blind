@@ -41,7 +41,10 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
+  .info__title h2 {
+    max-width: 396px;
+  }
   .info__title h2::after {
     -webkit-transform: translateX(-160px) translateY(-68px);
             transform: translateX(-160px) translateY(-68px);
