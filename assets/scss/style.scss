@@ -18,20 +18,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row-reverse;
+
 
     &__image {
         
-        min-width: 45%;
+        min-width: 40%;
+        margin-right: 5%;
         img {
-            padding-left: 11%;
             width: 100%; 
         }
     }
 
     &__title {  
 
-        width: 500px;
 
         display: flex;
         align-items: flex-start;
@@ -39,6 +38,8 @@ body {
 
         h2 {
             color: white;
+
+            max-width: 468px;
 
             padding-left: 70px;
 
@@ -53,14 +54,14 @@ body {
             &::before {
                 content: url('../img/ballBig.svg');
                 position: absolute;
-                transform: translateX(-60px) translateY(-20px);
+                transform: translateX(-60px) translateY(15px);
                 z-index: -1;
             }
 
             &::after {
                 content: url('../img/ballSmall.svg');
                 position: absolute;
-                transform: translateX(-255px) translateY(-65px);
+                transform: translateX(-465px) translateY(-34px);
                 z-index: 0;
             }
 
