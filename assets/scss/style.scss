@@ -2,13 +2,9 @@ body {
     background-color: black;
 }
 
-/* ------------------------ #section_block_two ------------------------ */
+/* ------------------------ #section_block_four ------------------------ */
 
-.section_block_two {
-
-    .section_block_two__title .mobile {
-        display: none;
-    }
+.section_block_four {
 
     max-width: 1240px;
     margin: 20px auto;
@@ -21,11 +17,13 @@ body {
 
 
     &__image {
-        
+
         min-width: 40%;
         margin-right: 5%;
         img {
-            width: 100%; 
+            width: 100%;
+            
+            
         }
     }
 
@@ -39,7 +37,7 @@ body {
         h2 {
             color: white;
 
-            max-width: 468px;
+            max-width: 548px;
 
             padding-left: 70px;
 
@@ -61,7 +59,7 @@ body {
             &::after {
                 content: url('../img/ballSmall.svg');
                 position: absolute;
-                transform: translateX(-465px) translateY(-34px);
+                transform: translateX(-275px) translateY(-33px);
                 z-index: 0;
             }
 
@@ -101,7 +99,7 @@ body {
         }
     }
 }
-/* ------------------------ #section_block_two ------------------------ */
+/* ------------------------ #section_block_four ------------------------ */
 
 /* ------------------------ #Media ------------------------ */
 
