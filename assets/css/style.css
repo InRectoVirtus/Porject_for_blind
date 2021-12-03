@@ -143,13 +143,20 @@ body {
     padding-left: 70px;
     font-size: 36px;
     line-height: 41px;
+    margin-bottom: 148px;
   }
   .section_block_one__title h2::after {
     -webkit-transform: translateX(-473px);
             transform: translateX(-473px);
   }
   .section_block_one__button {
-    display: none;
+    border-width: 22px 20px 22px 55px;
+    margin-top: 36px;
+    margin-bottom: 65px;
+  }
+  .section_block_one__button::before {
+    -webkit-transform: translateX(-35px) translateY(-5px);
+            transform: translateX(-35px) translateY(-5px);
   }
 }
 

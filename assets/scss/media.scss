@@ -52,6 +52,7 @@
                 padding-left: 70px;
                 font-size: 36px;
                 line-height: 41px;
+                margin-bottom: 148px;
 
                 &::before {
                     
@@ -63,7 +64,13 @@
         }
         
         &__button {
-            display: none;
+            border-width: 22px 20px 22px 55px;
+
+            margin-top: 36px;
+            margin-bottom: 65px;
+            &::before{
+                transform: translateX(-35px) translateY(-5px);
+            }
         }
     }
 }
