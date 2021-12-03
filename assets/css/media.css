@@ -1,1 +1,107 @@
-/* No CSS */
+@media (max-width: 1220px) {
+  .scroll__icon {
+    max-width: 950px;
+  }
+  .scroll__icon_1 {
+    margin-right: 360px;
+  }
+  .scroll__icon_1 p::after {
+    -webkit-transform: translateX(143px) translateY(10px);
+            transform: translateX(143px) translateY(10px);
+    width: 200px;
+  }
+  .scroll__icon_2 {
+    margin-right: 0;
+    padding-left: 90px;
+  }
+  .scroll__icon_2 p::after {
+    display: none;
+  }
+  .scroll__icon_3 {
+    margin-right: 360px;
+    padding-left: 50px;
+  }
+  .scroll__icon_3 p::after {
+    -webkit-transform: translateX(130px) translateY(-25px);
+            transform: translateX(130px) translateY(-25px);
+    width: 200px;
+  }
+}
+
+@media (max-width: 880px) {
+  .scroll__title {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .scroll__title::after {
+    -webkit-transform: translateX(-542px);
+            transform: translateX(-542px);
+  }
+  .scroll__icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .scroll__icon_1 {
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  .scroll__icon_1 p::after {
+    -webkit-transform: translateX(-67px) translateY(90px);
+            transform: translateX(-67px) translateY(90px);
+    width: 2px;
+    height: 100px;
+  }
+  .scroll__icon_2 {
+    padding-left: 0;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  .scroll__icon_2 p::after {
+    display: contents;
+    -webkit-transform: translateX(-22px) translateY(90px);
+            transform: translateX(-22px) translateY(90px);
+    width: 2px;
+    height: 100px;
+  }
+  .scroll__icon_3 {
+    padding-left: 0;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  .scroll__icon_3 p::after {
+    -webkit-transform: translateX(-45px) translateY(90px);
+            transform: translateX(-45px) translateY(90px);
+    width: 2px;
+    height: 100px;
+  }
+  .scroll__icon_4 {
+    margin: auto;
+  }
+}
+
+@media (max-width: 541px) {
+  .scroll__title::after {
+    -webkit-transform: translateX(-297px) translateY(-39px);
+            transform: translateX(-297px) translateY(-39px);
+  }
+}
+
+@media (max-width: 450px) {
+  .scroll .laptop {
+    display: none;
+  }
+  .scroll .mobile {
+    display: block;
+    width: 320px;
+    text-align: left;
+  }
+  .scroll .mobile::after {
+    -webkit-transform: translateX(-233px) translateY(-80px);
+            transform: translateX(-233px) translateY(-80px);
+  }
+}

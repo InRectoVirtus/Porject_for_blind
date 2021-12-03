@@ -1,6 +1,14 @@
+body {
+    background-color: black;
+}
+
 .scroll {
 
-    width: 1220px;
+    .mobile {
+        display: none;
+    }
+
+    max-width: 1220px;
     margin: auto;
 
     display: flex;
@@ -12,7 +20,7 @@
         &::before{
             content: '';
 
-            background-color: black;
+            background-color: white;
             height: 100px;
             width: 2px;
             display: block;
@@ -22,10 +30,13 @@
     &__title {
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
-        font-size: 50px;
+        font-size: 40px;
+        line-height: 45px;
+        color: white;
         
         padding-left: 60px;
         margin-top: 56px;
+
 
         z-index: 2;
         &::before {
@@ -41,12 +52,214 @@
             position: absolute;
             z-index: -1;
 
-            transform: translateX(-730px) translateY(-7px);
+            transform: translateX(-600px);
         }
     }
 
     &__icon {
 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        
+
+        &_1 {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 180px;
+            margin-right: 110px;
+
+            img {
+                margin-top: 62px;
+                margin-bottom: 34px;
+            }
+
+            p {
+                color: white;
+                line-height: 39,72px;
+                font-size: 35px;
+                font-family: 'Rubik', sans-serif;
+
+                padding-left: 42px;
+                padding-bottom: 10px;
+
+                z-index: 2;
+
+                &::before {
+                    content: url('../img/Vector-2.svg');
+
+                    position: absolute;
+                    z-index: -1;
+
+                    transform: translateX(-42px) translateY(14px);
+                    
+                }
+
+                &::after {
+                    content: '';
+
+                    position: absolute;
+
+                    width: 100px;
+                    height: 2px;
+
+                    background-color: white;
+                    transform: translateX(25px) translateY(10px);
+                }
+
+            }
+
+        }
+
+        &_2 {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 250px;
+            margin-right: 100px;
+
+            img {
+                margin-top: 98px;
+                margin-bottom: 34px;
+            }
+
+            p {
+                color: white;
+                line-height: 39,72px;
+                font-size: 35px;
+                font-family: 'Rubik', sans-serif;
+
+                padding-left: 42px;
+                padding-bottom: 10px;
+
+                z-index: 2;
+
+                &::before {
+                    content: url('../img/Vector-2.svg');
+
+                    position: absolute;
+                    z-index: -1;
+
+                    transform: translateX(-42px) translateY(14px);
+                    
+                }
+
+                &::after {
+                    content: '';
+
+                    position: absolute;
+
+                    width: 30px;
+                    height: 2px;
+
+                    background-color: white;
+                    transform: translateX(135px) translateY(10px);
+                }
+
+            }
+
+        }
+
+        &_3 {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 250px;
+            margin-right: 100px;
+
+            img {
+                margin-top: 98px;
+                margin-bottom: 34px;
+            }
+
+            p {
+                color: white;
+                line-height: 39,72px;
+                font-size: 35px;
+                font-family: 'Rubik', sans-serif;
+
+                padding-left: 42px;
+                padding-bottom: 10px;
+
+                z-index: 2;
+
+                &::before {
+                    content: url('../img/Vector-2.svg');
+
+                    position: absolute;
+                    z-index: -1;
+
+                    transform: translateX(-42px) translateY(14px);
+                    
+                }
+
+                &::after {
+                    content: '';
+
+                    position: absolute;
+
+                    width: 30px;
+                    height: 2px;
+
+                    background-color: white;
+                    transform: translateX(112px) translateY(-25px);
+                }
+
+            }
+
+        }
+
+        &_4 {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 230px;
+
+
+            img {
+                margin-top: 98px;
+                margin-bottom: 34px;
+            }
+
+            p {
+                color: white;
+                line-height: 39,72px;
+                font-size: 35px;
+                font-family: 'Rubik', sans-serif;
+
+                padding-left: 42px;
+                padding-bottom: 10px;
+
+                z-index: 2;
+
+                &::before {
+                    content: url('../img/Vector-2.svg');
+
+                    position: absolute;
+                    z-index: -1;
+
+                    transform: translateX(-42px) translateY(14px);
+                    
+                }
+
+                
+
+            }
+
+        }
     }
 
 }
+
+
+@import 'media.scss'
