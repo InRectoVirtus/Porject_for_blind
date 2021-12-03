@@ -1,5 +1,5 @@
 @media (max-width: 940px) {
-    .info {
+    .section_block_one {
 
         &__image {
 
@@ -11,7 +11,7 @@
             h2 {
                 
                 &::after {
-                    transform: translateX(-160px) translateY(-68px);
+                    transform: translateX(-255px) translateY(-68px);
                 }
             }
         }
@@ -23,7 +23,7 @@
 }
 
 @media (max-width: 755px) {
-    .info {
+    .section_block_one {
 
         padding: 0;
 
@@ -48,12 +48,14 @@
 
             h2 {
                 padding-left: 70px;
+                font-size: 36px;
+                line-height: 41px;
 
                 &::before {
                     
                 }
                 &::after {
-                    transform: translateX(-467px) translateY(-10px);
+                    transform: translateX(-473px);
                 }
             }
         }
@@ -65,44 +67,42 @@
 }
 
 @media (max-width: 520px) {
-    .info__title  {
+    .section_block_one__title  {
         h2 {
-            max-width: 396px;
+            width: 349px; 
         }
 
         h2::before{
 
         }
     }
-    .info__title {
+    .section_block_one__title {
         h2::after{ 
-            transform: translateX(-160px) translateY(-68px);
+            transform: translateX(-205px) translateY(-40px);
         }
     }
 }
 
-@media (max-width: 398px) {
-    .info__title {
-        h2::before {
+@media (max-width: 450px) {
+    .section_block_one {
 
-        }
-    }
-    .info__title {
-        h2::after{ 
-            transform: translateX(-360px) translateY(-68px);
-        }
-    }
-}
+        overflow: hidden;
 
-@media (max-width: 392px) {
-    .info__title {
-        h2::before {
-
+        .section_block_one__title h2 {
+            display: none;
+            
         }
-    }
-    .info__title {
-        h2::after{ 
-            transform: translateX(-160px) translateY(-125px);
+        .section_block_one__title .mobile {
+            display: block;
+            padding-right: 0;
+
+            width: auto;
+            &::after {
+                transform: translateX(-205px) translateY(-45px);
+            }
+            &::before {
+                transform: translateX(-60px) translateY(15px);
+            }
         }
     }
 }

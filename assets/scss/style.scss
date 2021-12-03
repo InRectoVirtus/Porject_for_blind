@@ -2,10 +2,13 @@ body {
     background-color: black;
 }
 
-/* ------------------------ #Info ------------------------ */
+/* ------------------------ #section_block_one ------------------------ */
 
-.info {
+.section_block_one {
 
+    .section_block_one__title .mobile {
+        display: none;
+    }
 
     max-width: 1240px;
     margin: 20px auto;
@@ -15,11 +18,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
 
     &__image {
- 
-        margin-right: 10%;
-
+        
         min-width: 45%;
         img {
 
@@ -27,11 +29,10 @@ body {
         }
     }
 
-    &__title {
-        max-width: 532px;
-        min-width: 338px;
+    &__title {  
 
-        flex-shrink: 1;
+        width: 500px;
+
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -39,7 +40,7 @@ body {
         h2 {
             color: white;
 
-            
+            padding-left: 70px;
 
             font-size: 50px;
             font-weight: 500;
@@ -59,7 +60,7 @@ body {
             &::after {
                 content: url('../img/ballSmall.svg');
                 position: absolute;
-                transform: translateX(-467px) translateY(-10px);
+                transform: translateX(-255px) translateY(-65px);
                 z-index: 0;
             }
 
@@ -99,7 +100,7 @@ body {
         }
     }
 }
-/* ------------------------ #Info ------------------------ */
+/* ------------------------ #section_block_one ------------------------ */
 
 /* ------------------------ #Media ------------------------ */
 
