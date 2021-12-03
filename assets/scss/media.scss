@@ -1,0 +1,14 @@
+@media (max-width: 660px) {
+    .contacts {
+        align-items: center;
+    }
+
+    .footer__link {
+        a:first-child {
+            margin-right: 0;
+        }
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
