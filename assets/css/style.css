@@ -31,6 +31,7 @@ body {
 }
 
 .section_block_one__image img {
+  padding-left: 11%;
   width: 100%;
 }
 
@@ -125,6 +126,9 @@ body {
   .section_block_one__image {
     margin: auto;
     width: 98%;
+  }
+  .section_block_one__image img {
+    padding-left: 0;
   }
   .section_block_one__title {
     -webkit-box-align: center;

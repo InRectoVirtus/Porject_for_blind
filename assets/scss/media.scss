@@ -2,7 +2,9 @@
     .section_block_one {
 
         &__image {
-
+            img {
+                
+            }
         }
 
         &__title {
@@ -33,7 +35,7 @@
             width: 98%;
             
             img {
-
+                padding-left: 0;
             }
         }
         
