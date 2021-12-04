@@ -71,8 +71,8 @@ body {
 .section_block_one__title h2::after {
   content: url("../img/ballSmall.svg");
   position: absolute;
-  -webkit-transform: translateX(-207px) translateY(-34px);
-          transform: translateX(-207px) translateY(-34px);
+  -webkit-transform: translateX(-255px) translateY(-34px);
+          transform: translateX(-255px) translateY(-34px);
   z-index: 0;
 }
 
@@ -147,8 +147,8 @@ body {
             transform: translateX(-60px);
   }
   .section_block_one__title h2::after {
-    -webkit-transform: translateX(-170px) translateY(-20px);
-            transform: translateX(-170px) translateY(-20px);
+    -webkit-transform: translateX(-202px) translateY(-20px);
+            transform: translateX(-202px) translateY(-20px);
   }
   .section_block_one__button {
     border-width: 22px 20px 22px 55px;
@@ -171,5 +171,19 @@ body {
 @media (max-width: 450px) {
   .section_block_one {
     overflow: hidden;
+  }
+  .section_block_one h2 {
+    display: none;
+  }
+  .section_block_one .section_block_one__title .mobile {
+    display: block;
+  }
+  .section_block_one .section_block_one__title .mobile::before {
+    -webkit-transform: translateX(-60px) translateY(20px);
+            transform: translateX(-60px) translateY(20px);
+  }
+  .section_block_one .section_block_one__title .mobile::after {
+    -webkit-transform: translateX(-202px) translateY(-40px);
+            transform: translateX(-202px) translateY(-40px);
   }
 }
