@@ -2,9 +2,9 @@ body {
     background-color: black;
 }
 
-/* ------------------------ #section_block_four ------------------------ */
+/* ------------------------ #section_block_two ------------------------ */
 
-.section_block_four {
+.section_block_two {
 
     max-width: 1240px;
     margin: 20px auto;
@@ -59,7 +59,7 @@ body {
             &::after {
                 content: url('../img/ballSmall.svg');
                 position: absolute;
-                transform: translateX(-275px) translateY(-33px);
+                transform: translateX(-465px) translateY(-33px);
                 z-index: 0;
             }
 
@@ -76,7 +76,7 @@ body {
 
             margin-bottom: 30px;
 
-            max-width: 401px;
+            max-width: 509px;
         }
     }
     
@@ -101,7 +101,7 @@ body {
         }
     }
 }
-/* ------------------------ #section_block_four ------------------------ */
+/* ------------------------ #section_block_two ------------------------ */
 
 /* ------------------------ #Media ------------------------ */
 
