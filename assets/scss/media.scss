@@ -1,5 +1,5 @@
 @media (max-width: 940px) {
-    .section_block_three {
+    .section_block_one {
 
         &__image {
             margin-left: 1%;
@@ -29,7 +29,7 @@
 }
 
 @media (max-width: 755px) {
-    .section_block_three {
+    .section_block_one {
 
         padding: 0;
 
@@ -80,7 +80,7 @@
 }
 
 @media (max-width: 520px) {
-    .section_block_three__title  {
+    .section_block_one__title  {
         h2 {
             max-width: 300px; 
             font-size: 36px;
@@ -90,7 +90,7 @@
 
         }
     }
-    .section_block_three__title {
+    .section_block_one__title {
         h2::after{ 
 
         }
@@ -98,7 +98,7 @@
 }
 
 @media (max-width: 450px) {
-    .section_block_three {
+    .section_block_one {
 
         overflow: hidden;
             
