@@ -152,3 +152,88 @@
         }
     }
 }
+
+@media (max-width: 755px) {
+    .info {
+
+        padding: 0;
+
+        flex-direction: column-reverse;
+        &__image {
+            margin: auto;
+            width: 98%;
+
+            img {
+
+            }
+        }
+
+        &__title {
+            align-items: center;
+            padding: 0 16px;
+
+
+            width: auto;
+            max-width: none;
+            min-width: auto;
+
+            h2 {
+                padding-left: 70px;
+
+                &::before {
+
+                }
+                &::after {
+                    transform: translateX(-467px) translateY(-10px);
+                }
+            }
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .info__title  {
+        h2 {
+            max-width: 396px;
+        }
+
+        h2::before{
+
+        }
+    }
+    .info__title {
+        h2::after{
+            transform: translateX(-160px) translateY(-68px);
+        }
+    }
+}
+
+@media (max-width: 398px) {
+    .info__title {
+        h2::before {
+
+        }
+    }
+    .info__title {
+        h2::after{
+            transform: translateX(-360px) translateY(-68px);
+        }
+    }
+}
+
+@media (max-width: 392px) {
+    .info__title {
+        h2::before {
+
+        }
+    }
+    .info__title {
+        h2::after{
+            transform: translateX(-160px) translateY(-125px);
+        }
+    }
+}
