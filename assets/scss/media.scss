@@ -1,23 +1,9 @@
 @media (max-width: 1220px) {
     .hero {
-
-        padding: 5px 16px;
-        &__title {
-            h2 {
-                font-size: 86px;
-            }
-        }
-        
         &__button {
-
-            margin-right: 30%;
-
             font-size: 20px;
 
-            border-width: 22px 35px 22px 75px;
-
             &::before {
-
                 transform: translateX(-38px) translateY(-7px) scale(0.8);
             }
         }
@@ -25,13 +11,11 @@
 }
 
 @media (max-width: 1075px) {
-    .hero__title{
-        h2{
+    .hero {
+        padding: 5px 16px;
+
+        &__title {
             font-size: 86px;
-        }
-        
-        .hero__button {
-            margin-right: 0;
         }
     }
 }
@@ -40,17 +24,15 @@
 
 @media (max-width: 755px) {
     .hero {
-        
-
-        padding: 5px 0px;
+        padding: 5px 0;
 
         flex-direction: column;
         &__title {
             max-width: none;
             width: auto;
 
-            margin-right: 0px;
-            padding: 0px 16px;
+            margin-right: 0;
+            padding: 0 16px;
             h2 {
                 font-size: 66px;
 
@@ -69,7 +51,7 @@
             img {
                 width: 140%;
                 position: relative;
-                
+
                 transform: translate(-21%, 0px);
             }
         }
