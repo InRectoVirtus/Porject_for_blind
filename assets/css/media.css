@@ -27,6 +27,7 @@
     width: 37px;
     height: 52px;
     position: relative;
+    cursor: pointer;
   }
   .head-block__burger span,
   .head-block__burger span:before,
