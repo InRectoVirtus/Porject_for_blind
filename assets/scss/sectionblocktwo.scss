@@ -105,4 +105,119 @@ body {
 
 /* ------------------------ #Media ------------------------ */
 
-@import 'media.scss'
+@media (max-width: 1030px) {
+    .section_block_two {
+
+        &__image {
+            margin-right: 1%;
+            img {
+                
+            }
+        }
+
+        &__title {
+
+        }
+
+        &__button {
+
+        }
+    }
+}
+
+@media (max-width: 851px) {
+   
+    .section_block_two__title {
+
+        h2 {
+            &::before {
+                transform: translateX(-60px) translateY(45px);
+            }
+
+            &::after {
+                transform: translateX(-260px) translateY(-59px);
+            }
+        }
+    }
+}
+
+@media (max-width: 755px) {
+    .section_block_two {
+
+        padding: 0;
+
+        flex-direction: column-reverse;
+        &__image {
+            margin: auto;
+            width: 98%;
+            
+            img {
+                padding-left: 0;
+            }
+        }
+        
+        &__title {
+            align-items: center;
+            padding: 0 16px;
+            
+
+            width: auto;
+            max-width: none;
+            min-width: auto;
+
+            h2 {
+                padding-left: 70px;
+                font-size: 36px;
+                line-height: 41px;
+                margin-bottom: 148px;
+
+                &::before {
+                    transform: translateX(-68px);
+                }
+                &::after {
+                    transform: translateX(-215px) translateY(-20px);
+                }
+            }
+
+            p {
+                max-width: none;
+            }
+        }
+        
+        &__button {
+            border-width: 22px 20px 22px 55px;
+
+            margin-top: 36px;
+            margin-bottom: 65px;
+            &::before{
+                transform: translateX(-35px) translateY(-5px);
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .section_block_two__title  {
+        h2 {
+            max-width: 300px; 
+            font-size: 30px;
+        }
+
+        h2::before{
+            transform: translateX(-60px) translateY(20px);
+        }
+    }
+    .section_block_two__title {
+        h2::after{ 
+            transform: translateX(-183px) translateY(-40px);
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .section_block_two {
+
+        overflow: hidden;
+            
+    }
+}
