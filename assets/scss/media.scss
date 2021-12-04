@@ -65,6 +65,10 @@
                     transform: translateX(-225px) translateY(-20px);
                 }
             }
+
+            p {
+                max-width: none;
+            }
         }
         
         &__button {

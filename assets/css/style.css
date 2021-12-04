@@ -75,6 +75,7 @@ body {
   font-family: 'Rubik', sans-serif;
   line-height: 33.6px;
   margin-bottom: 30px;
+  max-width: 401px;
 }
 
 .section_block_four__button {
@@ -151,6 +152,9 @@ body {
   .section_block_four__title h2::after {
     -webkit-transform: translateX(-225px) translateY(-20px);
             transform: translateX(-225px) translateY(-20px);
+  }
+  .section_block_four__title p {
+    max-width: none;
   }
   .section_block_four__button {
     border-width: 22px 20px 22px 55px;
