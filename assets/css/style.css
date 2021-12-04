@@ -1,0 +1,125 @@
+/* ------------------------ #Header ------------------------ */
+.header {
+  background-color: #000000;
+  padding: 5% 0 5% 7%;
+}
+.header__logo {
+  width: 106px;
+  height: auto;
+}
+.header__logo img {
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-left: 30px;
+  }
+}
+.nav__list li {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0 30px;
+}
+.nav__list li a:link,
+.nav__list li a:visited,
+.nav__list li a:hover,
+.nav__list li a:active {
+  color: #ffffff;
+}
+.nav__burger {
+  display: none;
+}
+.nav__burger-menu {
+  display: none;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 100px 30px 30px 30px;
+  transition: left 0.3s ease 0s;
+}
+.active a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+.active p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 50%;
+}
+
+/* ------------------------ #Header ------------------------ */
+/* ------------------------ #Media ------------------------ */
+@media (max-width: 786px) {
+  .header {
+    padding: 30px 16px;
+  }
+  .header__logo {
+    width: 70px;
+    height: auto;
+  }
+
+  .nav__list li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 650px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+    width: 37px;
+    height: 52px;
+    position: relative;
+    cursor: pointer;
+  }
+  .nav__burger span,
+.nav__burger span:before,
+.nav__burger span:after {
+    position: absolute;
+    top: 48%;
+    width: 37px;
+    height: 2px;
+    background-color: white;
+  }
+  .nav__burger span:before,
+.nav__burger span:after {
+    content: "";
+  }
+  .nav__burger span:before {
+    transform: translateY(-11px);
+  }
+  .nav__burger span:after {
+    transform: translateY(11px);
+  }
+}
+/* ------------------------ #Media ------------------------ */
+
+/*# sourceMappingURL=style.css.map */

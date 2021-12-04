@@ -3,15 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="js/burger.js" defer></script>
 
     <title>Project</title>
 
 </head>
 <body>
-    
+
+<header class="header">
+    <nav class="header__nav nav">
+        <a href="#" class="header__logo">
+            <img src="img/icon_logo.svg" alt="Логотип WardMe">
+        </a>
+        <ul class="nav__list">
+            <li><a href="">Про WardMe App</a></li>
+            <li><a href="">Як користуватись</a></li>
+            <li><a href="">Контакти</a></li>
+        </ul>
+
+        <div id="burger_button" class="nav__burger">
+            <span></span>
+        </div>
+
+        <div id="burger_menu" class="nav__burger-menu">
+            <a href="">Про WardMe App</a>
+            <a href="">Як користуватись</a>
+            <a href="">Контакти</a>
+            <p>&copy; 2021. WardMe App</p>
+        </div>
+    </nav>
+</header>
 
 </body>
 </html>
