@@ -73,6 +73,61 @@
 
 /* ------------------------ #Header ------------------------ */
 /* ------------------------ #Media ------------------------ */
+body {
+  background-color: black;
+}
+
+/* ------------------------ #Hero ------------------------ */
+.hero {
+  max-width: 1240px;
+  margin: auto;
+  padding: 5px 16px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__block {
+  padding-bottom: 10%;
+}
+.hero__title {
+  color: white;
+  line-height: 1.2;
+  font-size: 86px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 755px) and (max-width: 1024px) {
+  .hero__title {
+    font-size: 64px;
+  }
+}
+.hero__button {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border: solid white;
+  border-radius: 50px;
+  padding: 22px 35px 22px 75px;
+  margin-left: 8%;
+}
+.hero__button::before {
+  content: url("../img/play_market.png");
+  position: absolute;
+  transform: translateX(-45px) translateY(-4px);
+}
+.hero__image {
+  min-width: 45%;
+}
+.hero__image img {
+  width: 100%;
+}
+
+/* ------------------------ #Hero ------------------------ */
+/* ------------------------ #Media ------------------------ */
 @media (max-width: 786px) {
   .header {
     padding: 30px 16px;
@@ -90,11 +145,9 @@
   .nav {
     justify-content: space-between;
   }
-
   .nav__list {
     display: none;
   }
-
   .nav__burger {
     display: block;
     width: 37px;
@@ -102,170 +155,92 @@
     position: relative;
     cursor: pointer;
   }
-
   .nav__burger span,
-  .nav__burger span:before,
-  .nav__burger span:after {
+.nav__burger span:before,
+.nav__burger span:after {
     position: absolute;
     top: 48%;
     width: 37px;
     height: 2px;
     background-color: white;
   }
-
   .nav__burger span:before,
-  .nav__burger span:after {
+.nav__burger span:after {
     content: "";
   }
-
   .nav__burger span:before {
     transform: translateY(-11px);
   }
-
   .nav__burger span:after {
     transform: translateY(11px);
   }
-
-  body {
-    background-color: black;
-  }
-
-  /* ------------------------ #Hero ------------------------ */
-  .hero {
-    max-width: 1240px;
-    margin: auto;
-    padding: 5px 16px;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .hero__block {
-    padding-bottom: 10%;
-  }
-
-  .hero__title {
-    color: white;
-    line-height: 1.2;
-    font-size: 86px;
-    font-weight: 500;
-    font-family: "Rubik", sans-serif;
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 755px) and (max-width: 1024px) {
-    .hero__title {
-      font-size: 64px;
-    }
-  }
+}
+@media (max-width: 1220px) {
   .hero__button {
     font-size: 20px;
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    background-color: white;
-    color: black;
-    border: solid white;
-    border-radius: 50px;
-    padding: 22px 35px 22px 75px;
-    margin-left: 8%;
   }
-
   .hero__button::before {
-    content: url("../img/play_market.png");
-    position: absolute;
-    transform: translateX(-45px) translateY(-4px);
-  }
-
-  .hero__image {
-    min-width: 45%;
-  }
-
-  .hero__image img {
-    width: 100%;
-  }
-
-  /* ------------------------ #Hero ------------------------ */
-  /* ------------------------ #Media ------------------------ */
-  @media (max-width: 1220px) {
-    .hero__button {
-      font-size: 20px;
-    }
-
-    .hero__button::before {
-      transform: translateX(-38px) translateY(-7px) scale(0.8);
-    }
-  }
-  @media (max-width: 1075px) {
-    .hero {
-      padding: 5px 16px;
-    }
-
-    .hero__title {
-      font-size: 86px;
-    }
-  }
-  @media (max-width: 755px) {
-    .hero {
-      padding: 5px 0;
-      flex-direction: column;
-    }
-
-    .hero__title {
-      max-width: none;
-      width: auto;
-      margin-right: 0;
-      padding: 0 16px;
-    }
-
-    .hero__title h2 {
-      font-size: 66px;
-      margin-bottom: 50px;
-    }
-
-    .hero__button {
-      margin-bottom: 40px;
-    }
-
-    .hero__image {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
-
-    .hero__image img {
-      width: 140%;
-      position: relative;
-      transform: translate(-21%, 0px);
-    }
-  }
-  @media (max-width: 425px) {
-    .hero {
-      max-width: 100%;
-      margin: auto;
-    }
-
-    .hero__title h2 {
-      font-size: 50px;
-    }
-
-    .hero__button {
-      font-size: 16px;
-    }
-
-    .hero__image {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
-
-    .hero__image img {
-      width: 140%;
-      position: relative;
-      transform: translate(-21%, 0px);
-    }
+    transform: translateX(-38px) translateY(-7px) scale(0.8);
   }
 }
-/* ------------------------ #Media ------------------------ */
+@media (max-width: 1075px) {
+  .hero {
+    padding: 5px 16px;
+  }
+  .hero__title {
+    font-size: 86px;
+  }
+}
+@media (max-width: 755px) {
+  .hero {
+    padding: 5px 0;
+    flex-direction: column;
+  }
+  .hero__title {
+    max-width: none;
+    width: auto;
+    margin-right: 0;
+    padding: 0 16px;
+  }
+  .hero__title h2 {
+    font-size: 66px;
+    margin-bottom: 50px;
+  }
+  .hero__button {
+    margin-bottom: 40px;
+  }
+  .hero__image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .hero__image img {
+    width: 140%;
+    position: relative;
+    transform: translate(-21%, 0px);
+  }
+}
+@media (max-width: 425px) {
+  .hero {
+    max-width: 100%;
+    margin: auto;
+  }
+  .hero__title h2 {
+    font-size: 50px;
+  }
+  .hero__button {
+    font-size: 16px;
+  }
+  .hero__image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .hero__image img {
+    width: 140%;
+    position: relative;
+    transform: translate(-21%, 0px);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
