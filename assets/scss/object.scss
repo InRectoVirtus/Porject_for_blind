@@ -1,6 +1,6 @@
-.section_block_three {
+.object {
 
-    .section_block_three__title .mobile {
+    .object__title .mobile {
         display: none;
     }
 
@@ -46,16 +46,16 @@
             z-index: 2;
 
             &::before {
-                content: url('../img/ballBig.svg');
+                content: url('../img/icon_big_ball.svg');
                 position: absolute;
                 transform: translateX(-60px) translateY(15px);
                 z-index: -1;
             }
 
             &::after {
-                content: url('../img/ballSmall.svg');
+                content: url('../img/icon_small_ball.svg');
                 position: absolute;
-                transform: translateX(-207px) translateY(-34px);
+                transform: translateX(-255px) translateY(-34px);
                 z-index: 0;
             }
 
@@ -88,7 +88,7 @@
         border-width: 22px 35px 22px 75px;
 
         &::before{
-            content: url('../img/play_market.png');
+            content: url('../img/icon_play_market.png');
             position: absolute;
 
             transform: translateX(-45px) translateY(-4px);
@@ -96,12 +96,12 @@
         }
     }
 }
-/* ------------------------ #section_block_three ------------------------ */
+/* ------------------------ #object ------------------------ */
 
 /* ------------------------ #Media ------------------------ */
 
 @media (max-width: 940px) {
-    .section_block_three {
+    .object {
 
         &__image {
 
@@ -131,7 +131,7 @@
 }
 
 @media (max-width: 755px) {
-    .section_block_three {
+    .object {
 
         padding: 0;
 
@@ -164,7 +164,7 @@
                     transform: translateX(-60px);
                 }
                 &::after {
-                    transform: translateX(-170px) translateY(-20px);
+                    transform: translateX(-202px) translateY(-20px);
                 }
             }
         }
@@ -182,7 +182,7 @@
 }
 
 @media (max-width: 520px) {
-    .section_block_three__title  {
+    .object__title  {
         h2 {
             max-width: 300px;
             font-size: 36px;
@@ -192,7 +192,7 @@
 
         }
     }
-    .section_block_three__title {
+    .object__title {
         h2::after{
 
         }
@@ -200,9 +200,22 @@
 }
 
 @media (max-width: 450px) {
-    .section_block_three {
+    .object {
+        h2{
+            display: none;
+        }
 
         overflow: hidden;
 
+    }
+    .object .object__title .mobile {
+        display: block;
+
+        &::before {
+            transform: translateX(-60px) translateY(20px);
+        }
+        &::after {
+            transform: translateX(-202px) translateY(-40px);
+        }
     }
 }

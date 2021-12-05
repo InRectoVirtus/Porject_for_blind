@@ -1,4 +1,8 @@
-.section_block_four {
+.text {
+
+    .text__title .mobile {
+        display: none;
+    }
 
     max-width: 1240px;
     margin: 20px auto;
@@ -8,16 +12,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-direction: row-reverse;
 
     &__image {
 
         min-width: 40%;
-        margin-right: 5%;
+        margin-left: 10%;
         img {
             width: 100%;
-
-
         }
     }
 
@@ -31,7 +33,7 @@
         h2 {
             color: white;
 
-            max-width: 555px;
+            max-width: 285px;
 
             padding-left: 70px;
 
@@ -44,16 +46,16 @@
             z-index: 2;
 
             &::before {
-                content: url('../img/ballBig.svg');
+                content: url('../img/icon_big_ball.svg');
                 position: absolute;
                 transform: translateX(-60px) translateY(15px);
                 z-index: -1;
             }
 
             &::after {
-                content: url('../img/ballSmall.svg');
+                content: url('../img/icon_small_ball.svg');
                 position: absolute;
-                transform: translateX(-275px) translateY(-33px);
+                transform: translateX(-207px) translateY(-34px);
                 z-index: 0;
             }
 
@@ -67,10 +69,9 @@
             font-family: 'Rubik', sans-serif;
 
             line-height: 33.6px;
+            max-width: 511px;
 
             margin-bottom: 30px;
-
-            max-width: 401px;
         }
     }
 
@@ -87,7 +88,7 @@
         border-width: 22px 35px 22px 75px;
 
         &::before{
-            content: url('../img/play_market.png');
+            content: url('../img/icon_play_market.png');
             position: absolute;
 
             transform: translateX(-45px) translateY(-4px);
@@ -95,14 +96,15 @@
         }
     }
 }
+/* ------------------------ #text ------------------------ */
 
 /* ------------------------ #Media ------------------------ */
 
-@media (max-width: 1030px) {
-    .section_block_four {
+@media (max-width: 940px) {
+    .text {
 
         &__image {
-            margin-right: 1%;
+
             img {
 
             }
@@ -113,11 +115,11 @@
             h2 {
                 width: 433px;
                 &::before {
-                    transform: translateX(-60px) translateY(45px);
+
                 }
 
                 &::after {
-                    transform: translateX(-275px) translateY(-60px);
+
                 }
             }
         }
@@ -129,7 +131,7 @@
 }
 
 @media (max-width: 755px) {
-    .section_block_four {
+    .text {
 
         padding: 0;
 
@@ -159,15 +161,11 @@
                 margin-bottom: 148px;
 
                 &::before {
-                    transform: translateX(-68px);
+                    transform: translateX(-60px);
                 }
                 &::after {
-                    transform: translateX(-225px) translateY(-20px);
+                    transform: translateX(-170px) translateY(-20px);
                 }
-            }
-
-            p {
-                max-width: none;
             }
         }
 
@@ -184,25 +182,25 @@
 }
 
 @media (max-width: 520px) {
-    .section_block_four__title  {
+    .text__title  {
         h2 {
             max-width: 300px;
-            font-size: 30px;
+            font-size: 36px;
         }
 
         h2::before{
-            transform: translateX(-60px) translateY(20px);
+
         }
     }
-    .section_block_four__title {
+    .text__title {
         h2::after{
-            transform: translateX(-193px) translateY(-40px);
+
         }
     }
 }
 
 @media (max-width: 450px) {
-    .section_block_four {
+    .text {
 
         overflow: hidden;
 
