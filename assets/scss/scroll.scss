@@ -40,7 +40,7 @@ body {
 
         z-index: 2;
         &::before {
-            content: url('../img/vectorRoundH1.svg');
+            content: url('../img/icon_scroll_ball_big_h2.svg');
             position: absolute;
             z-index: -1;
 
@@ -48,7 +48,7 @@ body {
         }
         
         &::after {
-            content: url('../img/vectorRoundH2.svg');
+            content: url('../img/icon_scroll_ball_small_h2.svg');
             position: absolute;
             z-index: -1;
 
@@ -64,7 +64,7 @@ body {
 
         
 
-        &_1 {
+        &_hand {
 
             display: flex;
             flex-direction: column;
@@ -90,7 +90,7 @@ body {
                 z-index: 2;
 
                 &::before {
-                    content: url('../img/Vector-2.svg');
+                    content: url('../img/icon_scroll_ball.svg');
 
                     position: absolute;
                     z-index: -1;
@@ -115,7 +115,7 @@ body {
 
         }
 
-        &_2 {
+        &_eye {
 
             display: flex;
             flex-direction: column;
@@ -141,7 +141,7 @@ body {
                 z-index: 2;
 
                 &::before {
-                    content: url('../img/Vector-2.svg');
+                    content: url('../img/icon_scroll_ball.svg');
 
                     position: absolute;
                     z-index: -1;
@@ -166,7 +166,7 @@ body {
 
         }
 
-        &_3 {
+        &_money {
 
             display: flex;
             flex-direction: column;
@@ -192,7 +192,7 @@ body {
                 z-index: 2;
 
                 &::before {
-                    content: url('../img/Vector-2.svg');
+                    content: url('../img/icon_scroll_ball.svg');
 
                     position: absolute;
                     z-index: -1;
@@ -217,7 +217,7 @@ body {
 
         }
 
-        &_4 {
+        &_list {
 
             display: flex;
             flex-direction: column;
@@ -243,7 +243,7 @@ body {
                 z-index: 2;
 
                 &::before {
-                    content: url('../img/Vector-2.svg');
+                    content: url('../img/icon_scroll_ball.svg');
 
                     position: absolute;
                     z-index: -1;
@@ -266,7 +266,7 @@ body {
 
         max-width: 950px;
 
-        &_1 {
+        &_hand {
             margin-right: 360px;
             img {
             }
@@ -280,7 +280,7 @@ body {
             }
         }
 
-        &_2 {
+        &_eye {
             margin-right: 0;
             padding-left: 90px;
             img {
@@ -293,7 +293,7 @@ body {
                 }
             }
         }
-        &_3 {
+        &_money {
             margin-right: 360px;
             padding-left: 50px;
             img {
@@ -307,7 +307,7 @@ body {
                 }
             }
         }
-        &_4 {
+        &_list {
             img {
             }
             p {
@@ -335,7 +335,7 @@ body {
         flex-direction: column;
         flex-wrap: nowrap;
 
-        &_1 {
+        &_hand {
 
             margin: auto;
             margin-bottom: 100px;
@@ -357,7 +357,7 @@ body {
             }
         }
 
-        &_2 {
+        &_eye {
             padding-left: 0;
             margin: auto;
             margin-bottom: 100px;
@@ -379,7 +379,7 @@ body {
                 }
             }
         }
-        &_3 {
+        &_money {
             padding-left: 0;
             margin: auto;
             margin-bottom: 100px;
@@ -400,7 +400,7 @@ body {
                 }
             }
         }
-        &_4 {
+        &_list {
             
             margin: auto;
             img {

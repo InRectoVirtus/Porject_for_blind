@@ -41,14 +41,14 @@
       z-index: 2;
 
       &::before {
-        content: url('../img/ballBig.svg');
+        content: url('../img/icon_big_ball.svg');
         position: absolute;
         transform: translateX(-60px) translateY(-20px);
         z-index: -1;
       }
 
       &::after {
-        content: url('../img/ballSmall.svg');
+        content: url('../img/icon_small_ball.svg');
         position: absolute;
         transform: translateX(-467px) translateY(-10px);
         z-index: 0;
@@ -82,11 +82,96 @@
     border-width: 22px 35px 22px 75px;
 
     &::before{
-      content: url('../img/play_market.png');
+      content: url('../img/icon_play_market.png');
       position: absolute;
 
       transform: translateX(-45px) translateY(-4px);
 
     }
+  }
+}
+
+@media (max-width: 755px) {
+  .info {
+
+      padding: 0;
+
+      flex-direction: column-reverse;
+      &__image {
+          margin: auto;
+          width: 98%;
+
+          img {
+
+          }
+      }
+
+      &__title {
+          align-items: center;
+          padding: 0 16px;
+
+
+          width: auto;
+          max-width: none;
+          min-width: auto;
+
+          h2 {
+              padding-left: 70px;
+
+              &::before {
+
+              }
+              &::after {
+                  transform: translateX(-467px) translateY(-10px);
+              }
+          }
+      }
+
+      &__button {
+          display: none;
+      }
+  }
+}
+
+@media (max-width: 520px) {
+  .info__title  {
+      h2 {
+          max-width: 396px;
+      }
+
+      h2::before{
+
+      }
+  }
+  .info__title {
+      h2::after{
+          transform: translateX(-160px) translateY(-68px);
+      }
+  }
+}
+
+@media (max-width: 398px) {
+  .info__title {
+      h2::before {
+
+      }
+  }
+  .info__title {
+      h2::after{
+          transform: translateX(-360px) translateY(-68px);
+      }
+  }
+}
+
+@media (max-width: 392px) {
+  .info__title {
+      h2::before {
+
+      }
+  }
+  .info__title {
+      h2::after{
+          transform: translateX(-160px) translateY(-125px);
+      }
   }
 }

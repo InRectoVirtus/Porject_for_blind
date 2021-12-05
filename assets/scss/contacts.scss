@@ -23,14 +23,14 @@ body {
         padding-left: 67px;
         
         &::before {
-            content: url('../img/ContactRed.svg');
+            content: url('../img/icon_contact_red.svg');
             position: absolute;
             z-index: -1;
             transform: translateX(-60px) translateY(-20px);
         }
         
         &::after {
-            content: url('../img/ContactBlue.svg');
+            content: url('../img/icon_contact_blue.svg');
             position: absolute;
             z-index: -1;
             transform: translateX(-255px);

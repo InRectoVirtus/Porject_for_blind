@@ -1,0 +1,150 @@
+.info {
+  max-width: 1240px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__image {
+  margin-right: 10%;
+  min-width: 45%;
+}
+
+.info__image img {
+  width: 100%;
+}
+
+.info__title {
+  max-width: 532px;
+  min-width: 338px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info__title h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  line-height: 56.75px;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.info__title h2::before {
+  content: url("../img/icon_big_ball.svg");
+  position: absolute;
+  -webkit-transform: translateX(-60px) translateY(-20px);
+          transform: translateX(-60px) translateY(-20px);
+  z-index: -1;
+}
+
+.info__title h2::after {
+  content: url("../img/icon_small_ball.svg");
+  position: absolute;
+  -webkit-transform: translateX(-467px) translateY(-10px);
+          transform: translateX(-467px) translateY(-10px);
+  z-index: 0;
+}
+
+.info__title p {
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  line-height: 33.6px;
+  margin-bottom: 30px;
+}
+
+.info__button {
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border: solid white;
+  border-radius: 50px;
+  border-width: 22px 35px 22px 75px;
+}
+
+.info__button::before {
+  content: url("../img/icon_play_market.png");
+  position: absolute;
+  -webkit-transform: translateX(-45px) translateY(-4px);
+          transform: translateX(-45px) translateY(-4px);
+}
+
+@media (max-width: 755px) {
+  .info {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .info__image {
+    margin: auto;
+    width: 98%;
+  }
+  .info__title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 16px;
+    width: auto;
+    max-width: none;
+    min-width: auto;
+  }
+  .info__title h2 {
+    padding-left: 70px;
+  }
+  .info__title h2::after {
+    -webkit-transform: translateX(-467px) translateY(-10px);
+            transform: translateX(-467px) translateY(-10px);
+  }
+  .info__button {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .info__title h2 {
+    max-width: 396px;
+  }
+  .info__title h2::after {
+    -webkit-transform: translateX(-160px) translateY(-68px);
+            transform: translateX(-160px) translateY(-68px);
+  }
+}
+
+@media (max-width: 398px) {
+  .info__title h2::after {
+    -webkit-transform: translateX(-360px) translateY(-68px);
+            transform: translateX(-360px) translateY(-68px);
+  }
+}
+
+@media (max-width: 392px) {
+  .info__title h2::after {
+    -webkit-transform: translateX(-160px) translateY(-125px);
+            transform: translateX(-160px) translateY(-125px);
+  }
+}
