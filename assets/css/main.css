@@ -141,6 +141,10 @@ body {
   display: none;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +156,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 20;
   margin-top: 110px;
   position: fixed;
   top: 0;
@@ -188,6 +193,12 @@ body {
   }
   .nav__list li {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 651px) {
+  .active {
+    display: none;
   }
 }
 
