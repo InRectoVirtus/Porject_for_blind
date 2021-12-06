@@ -22,6 +22,10 @@
 }
 
 .show {
+  li:first-child {
+    margin-top: 80px;
+  }
+  
   li {
       font-size: 20px;
       font-weight: 500;
@@ -40,12 +44,18 @@
 }
 
 .collapsing {
+    li:first-child {
+      margin-top: 80px;
+    }
+
     li {
       font-size: 20px;
       font-weight: 500;
       font-family: 'Rubik', sans-serif;
       margin-bottom: 45px;
     }
+
+    
 
     p {
       font-size: 14px;
