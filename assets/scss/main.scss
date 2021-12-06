@@ -75,13 +75,80 @@ body {
   }
 }
 
-@import "header";
 @import "hero";
 @import "scroll";
-@import "info";
-@import "object";
-@import "money";
-@import "text";
-@import "sos";
 @import "contacts";
+
+.header {
+  background-color: #000000;
+}
+.copyright {
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.list {
+  &__link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+.custom-nav {
+  background-color: #000000;
+  padding: 1.5rem;
+}
+
+.custom-nav {
+  background-color: #000000;
+  padding: 1.5rem;
+}
+
+
+.money {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.object {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .info {
+    padding: 1rem;
+
+    &__image {
+      margin-top: 3rem;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+}
 
