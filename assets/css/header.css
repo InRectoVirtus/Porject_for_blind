@@ -1,166 +1,79 @@
-.header {
-  background-color: #000000;
-  padding: 5% 0 5% 16px;
-  max-width: 1240px;
-  margin: auto;
-}
-
-.header__logo {
-  width: 106px;
-  height: auto;
-}
-
-.header__logo img {
-  max-width: 100%;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-@media screen and (min-width: 768px) {
-  .nav__list {
-    margin-left: 30px;
-  }
-}
-
-.nav__list li {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 0 30px;
-}
-
-.nav__list li a:link,
-.nav__list li a:visited,
-.nav__list li a:hover,
-.nav__list li a:active {
-  color: #ffffff;
-}
-
-.nav__burger {
-  display: none;
-}
-
-.nav__burger-menu {
-  display: none;
-}
-
-.lock {
-  overflow: hidden;
-}
-
-.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 20;
-  margin-top: 110px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  padding: 100px 30px 30px 30px;
-  -webkit-transition: left 0.3s ease 0s;
-  transition: left 0.3s ease 0s;
-}
-
-.active a {
+.list__link {
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+}
+
+.custom-nav {
+  background-color: #000000;
+  padding: 1.5rem;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+  margin-top: 7.5rem;
+}
+
+.show li:first-child {
+  margin-top: 80px;
+}
+
+.show li {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
   margin-bottom: 45px;
 }
 
-.active p {
-  color: white;
+.show p {
   font-size: 14px;
   font-weight: 400;
-  margin-top: 50%;
+  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+  margin-top: 7.5rem;
 }
 
-@media (max-width: 786px) {
-  .header {
-    padding: 30px 16px;
-  }
-  .header__logo {
-    width: 70px;
-    height: auto;
-  }
-  .nav__list li {
-    font-size: 14px;
-  }
+.collapsing li:first-child {
+  margin-top: 80px;
 }
 
-@media (min-width: 651px) {
-  .active {
+.collapsing li {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 45px;
+}
+
+.collapsing p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+  margin-top: 7.5rem;
+}
+
+.custom-nav {
+  background-color: #000000;
+  padding: 1.5rem;
+}
+
+.custom-container {
+  width: 100%;
+  max-width: 1240px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 991px) {
+  .copyright {
     display: none;
-  }
-}
-
-@media (max-width: 650px) {
-  .nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .nav__list {
-    display: none;
-  }
-  .nav__burger {
-    display: block;
-    width: 37px;
-    height: 52px;
-    position: relative;
-    cursor: pointer;
-  }
-  .nav__burger span,
-  .nav__burger span:before,
-  .nav__burger span:after {
-    position: absolute;
-    top: 48%;
-    width: 37px;
-    height: 2px;
-    background-color: white;
-  }
-  .nav__burger span:before,
-  .nav__burger span:after {
-    content: '';
-  }
-  .nav__burger span:before {
-    -webkit-transform: translateY(-11px);
-            transform: translateY(-11px);
-  }
-  .nav__burger span:after {
-    -webkit-transform: translateY(11px);
-            transform: translateY(11px);
   }
 }
