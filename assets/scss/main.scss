@@ -2,6 +2,77 @@
 
 body {
   background-color: #000000;
+  color: #ffffff;
+  box-sizing: content-box;
+
+  a {
+    &:hover {
+      color: currentColor;
+    }
+  }
+}
+
+.section-title-circle {
+  color: currentColor;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  z-index: 2;
+  margin: 2rem 0;
+  position: relative;
+  word-break: break-word;
+  padding-left: 4rem;
+  //background-image: url("../img/icon_circle_bg.svg");
+  //background-repeat: no-repeat;
+  //background-size: contain;
+
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
+
+  &::before {
+    content: url('../img/icon_circle_bg.svg');
+    position: absolute;
+    transform: translateX(-60px) translateY(-12px);
+    z-index: -1;
+  }
+}
+
+.section-subtitle {
+  word-break: break-word;
+  color: currentColor;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 0;
+
+  @media (min-width: 996px) {
+    font-size: 28px;
+  }
+}
+
+.custom-btn {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #000000;
+  border: solid #ffffff;
+  border-radius: 50px;
+  padding: 22px 35px 22px 75px;
+
+  &:hover {
+    color: #000000;
+  }
+
+
+  &::before {
+    content: url('../img/icon_play_market.png');
+    position: absolute;
+
+    transform: translateX(-45px) translateY(-4px);
+
+  }
 }
 
 @import "header";

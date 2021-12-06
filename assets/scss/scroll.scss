@@ -1,15 +1,8 @@
-body {
-    background-color: black;
-}
 
 .scroll {
-
-    
-    
     max-width: 1240px;
     margin: auto;
     margin-top: 75px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,18 +20,15 @@ body {
     }
 
     &__title {
-        br {
-            display: none;
-        }
-
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
         font-size: 40px;
         line-height: 45px;
         color: white;
-        
+
         padding-left: 60px;
         margin-top: 56px;
+        word-break: break-word;
 
 
         z-index: 2;
@@ -49,7 +39,7 @@ body {
 
             transform: translateX(-51px) translateY(-19px);
         }
-        
+
         &::after {
             content: url('../img/icon_scroll_ball_small_h2.svg');
             position: absolute;
@@ -65,7 +55,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
 
-        
+
 
         &_hand {
 
@@ -83,7 +73,6 @@ body {
 
             p {
                 color: white;
-                line-height: 39,72px;
                 font-size: 35px;
                 font-family: 'Rubik', sans-serif;
 
@@ -99,7 +88,7 @@ body {
                     z-index: -1;
 
                     transform: translateX(-42px) translateY(14px);
-                    
+
                 }
 
                 &::after {
@@ -134,7 +123,6 @@ body {
 
             p {
                 color: white;
-                line-height: 39,72px;
                 font-size: 35px;
                 font-family: 'Rubik', sans-serif;
 
@@ -150,7 +138,7 @@ body {
                     z-index: -1;
 
                     transform: translateX(-42px) translateY(14px);
-                    
+
                 }
 
                 &::after {
@@ -201,7 +189,7 @@ body {
                     z-index: -1;
 
                     transform: translateX(-42px) translateY(14px);
-                    
+
                 }
 
                 &::after {
@@ -236,7 +224,6 @@ body {
 
             p {
                 color: white;
-                line-height: 39,72px;
                 font-size: 35px;
                 font-family: 'Rubik', sans-serif;
 
@@ -252,10 +239,10 @@ body {
                     z-index: -1;
 
                     transform: translateX(-42px) translateY(14px);
-                    
+
                 }
 
-                
+
 
             }
 
@@ -274,11 +261,11 @@ body {
             img {
             }
             p {
-                &::before {  
+                &::before {
                 }
-                &::after { 
+                &::after {
                     transform: translateX(143px) translateY(10px);
-                    width: 200px;   
+                    width: 200px;
                 }
             }
         }
@@ -289,10 +276,10 @@ body {
             img {
             }
             p {
-                &::before {  
+                &::before {
                 }
-                &::after {    
-                    display: none;       
+                &::after {
+                    display: none;
                 }
             }
         }
@@ -302,11 +289,11 @@ body {
             img {
             }
             p {
-                &::before {  
+                &::before {
                 }
-                &::after { 
+                &::after {
                     transform: translateX(130px) translateY(-25px);
-                    width: 200px;         
+                    width: 200px;
                 }
             }
         }
@@ -314,9 +301,9 @@ body {
             img {
             }
             p {
-                &::before {  
+                &::before {
                 }
-                &::after {           
+                &::after {
                 }
             }
         }
@@ -348,11 +335,11 @@ body {
             }
 
             p {
-                &::before {  
+                &::before {
 
                 }
 
-                &::after {  
+                &::after {
                     transform: translateX(-67px) translateY(90px);
                     width: 2px;
                     height: 100px;
@@ -370,12 +357,12 @@ body {
             }
 
             p {
-                &::before {  
+                &::before {
 
                 }
 
-                &::after { 
-                    display: block; 
+                &::after {
+                    display: block;
                     transform: translateX(82px) translateY(90px);
                     width: 2px;
                     height: 100px;
@@ -392,11 +379,11 @@ body {
             }
 
             p {
-                &::before {  
+                &::before {
 
                 }
 
-                &::after {  
+                &::after {
                     transform: translateX(-45px) translateY(90px);
                     width: 2px;
                     height: 100px;
@@ -404,14 +391,14 @@ body {
             }
         }
         &_list {
-            
+
             margin: auto;
             img {
             }
             p {
-                &::before {  
+                &::before {
                 }
-                &::after {           
+                &::after {
                 }
             }
         }
@@ -428,7 +415,8 @@ body {
 
 @media (max-width: 450px) {
     .scroll__title {
-        width: 320px;
+        padding-left: 1.5rem;
+        //width: 320px;
         text-align: left;
 
         &::after {
