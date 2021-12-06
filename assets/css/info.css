@@ -1,6 +1,7 @@
 .info {
   max-width: 1240px;
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 75px;
   padding: 0 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,6 +91,23 @@
   position: absolute;
   -webkit-transform: translateX(-45px) translateY(-4px);
           transform: translateX(-45px) translateY(-4px);
+}
+
+@media (max-width: 917px) {
+  .info__title h2::before {
+    content: url("../img/icon_big_ball.svg");
+    position: absolute;
+    -webkit-transform: translateX(-60px) translateY(-20px);
+            transform: translateX(-60px) translateY(-20px);
+    z-index: -1;
+  }
+  .info__title h2::after {
+    content: url("../img/icon_small_ball.svg");
+    position: absolute;
+    -webkit-transform: translateX(-160px) translateY(-67px);
+            transform: translateX(-160px) translateY(-67px);
+    z-index: 0;
+  }
 }
 
 @media (max-width: 755px) {
