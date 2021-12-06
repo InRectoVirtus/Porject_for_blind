@@ -6,7 +6,8 @@ body {
 
     display: flex;
     flex-direction: column;
-    margin: 30px auto;
+    margin: auto;
+    margin-top: 225px;
 
 
     max-width: 1240px;
@@ -21,6 +22,7 @@ body {
 
         margin-bottom: 80px;
         padding-left: 67px;
+        padding-top: 22px;
         
         &::before {
             content: url('../img/icon_contact_red.svg');

@@ -1500,7 +1500,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 30px auto;
+  margin: auto;
+  margin-top: 225px;
   max-width: 1240px;
   padding: 0 16px;
 }
@@ -1513,6 +1514,7 @@ body {
   z-index: 2;
   margin-bottom: 80px;
   padding-left: 67px;
+  padding-top: 22px;
 }
 
 .contacts__title::before {
