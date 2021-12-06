@@ -4,13 +4,12 @@ body {
 
 .scroll {
 
-    .mobile {
-        display: none;
-    }
-
-    max-width: 1220px;
+    
+    
+    max-width: 1240px;
     margin: auto;
-
+    margin-top: 75px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +27,10 @@ body {
     }
 
     &__title {
+        br {
+            display: none;
+        }
+
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
         font-size: 40px;
@@ -372,8 +375,8 @@ body {
                 }
 
                 &::after { 
-                    display: contents; 
-                    transform: translateX(-22px) translateY(90px);
+                    display: block; 
+                    transform: translateX(82px) translateY(90px);
                     width: 2px;
                     height: 100px;
                 }
@@ -424,17 +427,15 @@ body {
 }
 
 @media (max-width: 450px) {
-    .scroll .laptop {
-        display: none;
-    }
-
-    .scroll .mobile {
-        display: block;
+    .scroll__title {
         width: 320px;
         text-align: left;
 
         &::after {
             transform: translateX(-233px) translateY(-80px);
+        }
+        br {
+            display: block;
         }
     }
 }
