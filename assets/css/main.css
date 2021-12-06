@@ -134,36 +134,52 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+  .hero__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__title {
+    font-size: 60px;
+  }
+  .hero__button {
+    font-size: 16px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .hero__title {
+    font-size: 70px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__button {
+    margin-left: 0;
+  }
+}
 @media (max-width: 1220px) {
   .hero__button {
-    font-size: 20px;
+    font-size: 18px;
   }
   .hero__button::before {
     transform: translateX(-38px) translateY(-7px) scale(0.8);
   }
 }
-@media (max-width: 1075px) {
+@media (max-width: 1024px) {
   .hero {
     padding: 5px 16px;
-  }
-  .hero__title {
-    font-size: 86px;
   }
 }
 @media (max-width: 755px) {
   .hero {
     padding: 5px 0;
     flex-direction: column;
-  }
-  .hero__title {
-    max-width: none;
-    width: auto;
-    margin-right: 0;
-    padding: 0 16px;
-  }
-  .hero__title h2 {
-    font-size: 66px;
-    margin-bottom: 50px;
   }
   .hero__button {
     margin-bottom: 40px;
@@ -183,9 +199,6 @@ body {
   .hero {
     max-width: 100%;
     margin: auto;
-  }
-  .hero__title h2 {
-    font-size: 50px;
   }
   .hero__button {
     font-size: 16px;
