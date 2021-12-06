@@ -2,7 +2,8 @@
 
 
   max-width: 1240px;
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 75px;
   padding: 0 16px;
 
 
@@ -16,8 +17,7 @@
 
     min-width: 45%;
     img {
-
-      width: 100%;
+      width: 75%;
     }
   }
 
@@ -91,6 +91,26 @@
   }
 }
 
+@media (max-width: 917px) {
+  .info__title {
+    h2 {
+      &::before {
+        content: url('../img/icon_big_ball.svg');
+        position: absolute;
+        transform: translateX(-60px) translateY(-20px);
+        z-index: -1;
+      }
+
+      &::after {
+        content: url('../img/icon_small_ball.svg');
+        position: absolute;
+        transform: translateX(-160px) translateY(-67px);
+        z-index: 0;
+      }
+    }
+  }
+}
+
 @media (max-width: 755px) {
   .info {
 
@@ -99,10 +119,10 @@
       flex-direction: column-reverse;
       &__image {
           margin: auto;
-          width: 98%;
+          padding-left: 25px;
 
           img {
-
+            width: 94%;
           }
       }
 
