@@ -200,6 +200,9 @@ body {
   .active {
     display: none;
   }
+  .lock {
+    overflow: scroll;
+  }
 }
 
 @media (max-width: 650px) {
