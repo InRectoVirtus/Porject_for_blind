@@ -6,8 +6,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    margin: 30px auto;
-
+    margin: 225px auto 0;
 
     max-width: 1240px;
     padding: 0 16px;
@@ -21,14 +20,15 @@ body {
 
         margin-bottom: 80px;
         padding-left: 67px;
-        
+        padding-top: 22px;
+
         &::before {
             content: url('../img/icon_contact_red.svg');
             position: absolute;
             z-index: -1;
             transform: translateX(-60px) translateY(-20px);
         }
-        
+
         &::after {
             content: url('../img/icon_contact_blue.svg');
             position: absolute;
@@ -42,7 +42,7 @@ body {
         font-size: 28px;
         color: white;
 
-        
+
     }
     &__link {
         margin-top: 41px;
@@ -59,7 +59,7 @@ body {
     justify-content: center;
     flex-direction: column;
 
-        &__link { 
+        &__link {
             display: flex;
             flex-direction: row;
 
@@ -67,17 +67,17 @@ body {
             a:first-child {
                 margin-right: 50px;
             }
-            
+
             a {
                 display: flex;
                 flex-direction: row;
-            
+
                 font-size: 28px;
                 line-height: 66px;
                 font-weight: 400;
                 font-family: 'Rubik', sans-serif;
                 text-align: center;
-                
+
                 color: white;
         }
     }
@@ -85,7 +85,7 @@ body {
     img {
         margin-top: 50px;
     }
-    
+
     p {
         margin-top: 50px;
         margin-bottom: 50px;
