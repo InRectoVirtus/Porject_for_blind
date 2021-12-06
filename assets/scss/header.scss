@@ -3,12 +3,100 @@
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
+    font-family: 'Rubik', sans-serif;
   }
 }
 
 .custom-nav {
   background-color: #000000;
   padding: 1.5rem;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+
+  margin-top: 7.5rem;
+}
+
+.show {
+  li {
+      font-size: 20px;
+      font-weight: 500;
+      font-family: 'Rubik', sans-serif;
+      margin-bottom: 45px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: 'Rubik', sans-serif;
+      color: #ffffff;
+  
+      margin-top: 7.5rem;
+ }
+}
+
+.collapsing {
+    li {
+      font-size: 20px;
+      font-weight: 500;
+      font-family: 'Rubik', sans-serif;
+      margin-bottom: 45px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: 'Rubik', sans-serif;
+      color: #ffffff;
+
+      margin-top: 7.5rem;
+  }
+}
+
+      // li {
+      //   font-size: 20px;
+      //   font-weight: 500;
+      //   font-family: 'Rubik', sans-serif;
+      //   margin-bottom: 45px;
+      // }
+  
+      // p {
+      //   font-size: 14px;
+      //   font-weight: 400;
+      //   font-family: 'Rubik', sans-serif;
+  
+      //   margin-top: 90px;
+      
+
+.custom-nav {
+  background-color: #000000;
+  padding: 1.5rem;
+}
+
+@mixin make-container($padding-x: $container-padding-x, $padding-y: $container-padding-y) {
+  width: 100%;
+  max-width: 1240px;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  padding-top: $padding-y;
+  padding-bottom: $padding-y;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container(16px, 36px);
+}
+
+@media (min-width: 991px) {
+  .copyright {
+    display: none;
+  }
 }
 
 //.header {
